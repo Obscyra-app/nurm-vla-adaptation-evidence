@@ -1,0 +1,78 @@
+{
+  "schema": "nurm.vla-public-result-card.v1",
+  "status": "SYNTHETIC_DEMO",
+  "title": "Synthetic paired VLA adapter example",
+  "model": {
+    "repo_id": "example/vla-base",
+    "revision": "synthetic-revision-1",
+    "license": "SYNTHETIC-EXAMPLE-ONLY",
+    "parameter_class": "example"
+  },
+  "data": {
+    "source": "synthetic fixture generated for this repository",
+    "license": "CC0-1.0",
+    "public_disclosure_allowed": true,
+    "permission_basis": "all values and records are fictional synthetic examples",
+    "permission_reference": "SYNTHETIC_FIXTURE",
+    "heldout_unit": "synthetic_scene",
+    "train_units": 713,
+    "evaluation_units": 37
+  },
+  "comparison": {
+    "base_arm": "frozen synthetic base",
+    "candidate_arm": "same synthetic base plus adapter",
+    "same_base": true,
+    "same_inputs": true,
+    "same_seeds": true,
+    "same_sampling": true,
+    "only_intended_difference": "adapter"
+  },
+  "adapter_audit": {
+    "trainable_fraction": 0.0125,
+    "trainables_outside_adapter": 0,
+    "visual_encoder_frozen": true,
+    "action_expert_frozen": true,
+    "save_reload_verified": true
+  },
+  "metrics": [
+    {
+      "name": "synthetic_semantic_score",
+      "direction": "higher_is_better",
+      "base": 0.42,
+      "candidate": 0.51,
+      "delta": 0.09,
+      "ci95": [0.03, 0.15],
+      "ci_method": "paired bootstrap",
+      "paired": true,
+      "cluster_unit": "synthetic_scene",
+      "unit": "fraction",
+      "scale_owner": "synthetic example"
+    },
+    {
+      "name": "synthetic_token_f1",
+      "direction": "higher_is_better",
+      "base": 0.61,
+      "candidate": 0.66,
+      "delta": 0.05,
+      "ci95": [0.01, 0.09],
+      "ci_method": "paired bootstrap",
+      "paired": true,
+      "cluster_unit": "synthetic_scene",
+      "unit": "fraction",
+      "scale_owner": "synthetic example"
+    }
+  ],
+  "claims": {
+    "official_benchmark": false,
+    "road_safety": false,
+    "closed_loop_driving": false,
+    "state_of_the_art": false
+  },
+  "disclosure": {
+    "contains_dataset_bytes": false,
+    "contains_raw_outputs": false,
+    "contains_event_identifiers": false,
+    "contains_prompts_or_gold": false,
+    "contains_adapter_weights": false
+  }
+}
