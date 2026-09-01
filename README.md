@@ -92,3 +92,6 @@ of the art.
 
 NURM and Obscyra Technologies are not affiliated with or endorsed by NVIDIA.
 NVIDIA and Alpamayo are trademarks or names of their respective owner.
+
+For the NURM publication-boundary record behind this template, see
+[Alpamayo 2 Super adapter study — publication boundary](https://nurm.obscyra.app/log/#alpamayo-adapter).
